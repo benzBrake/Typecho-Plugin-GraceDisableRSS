@@ -12,7 +12,7 @@ class GraceDisableRSS_Plugin implements Typecho_Plugin_Interface
 {
     public static function activate()
     {
-        Typecho_Plugin::factory('\Widget\Archive')->handleInit = array(__CLASS__, 'disableFeed');
+        Typecho_Plugin::factory('Widget_Archive')->handleInit = array(__CLASS__, 'disableFeed');
     }
 
     public static function deactivate()
